@@ -19,7 +19,7 @@ end
 
 def word_substituter(tweet_one)
   dictionary.keys.collect do |d|
-    tweet_one.gsub! d  do |s|
+    tweet_one.split.gsub! d  do |s|
       if s.length == d.length
         dictionary[d]
       end
