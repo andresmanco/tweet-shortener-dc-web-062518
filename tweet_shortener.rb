@@ -20,12 +20,13 @@ end
 
 def word_substituter(tweet_one)
   dictionary.keys.collect do |d|
-    tweet_one.split.collect do |tw1|
+    str = tweet_one.split
+    str.collect do |tw1|
       if d == tw1
         tw1 = dictionary[d]
         
       end
     end
   end
-  tweet_one
+  str
 end
