@@ -23,5 +23,6 @@ def word_substituter(tweet_one)
       tw1
     end 
   end
-  str.join(',')
+  str.join(' ')
+  binding.pry
 end
