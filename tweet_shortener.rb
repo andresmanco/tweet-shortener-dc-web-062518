@@ -23,6 +23,7 @@ def word_substituter(tweet_one)
     tweet_one.split.collect do |tw1|
       if d == tw1
         tw1 = dictionary[d]
+        binding.pry
       end
     end
   end
