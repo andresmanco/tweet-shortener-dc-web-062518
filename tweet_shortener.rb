@@ -34,4 +34,4 @@ def bulk_tweet_shortener(tweets)
 end
 
 
-def 
+def selective_tweet_shortener
