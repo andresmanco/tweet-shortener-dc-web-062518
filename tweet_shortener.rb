@@ -16,8 +16,9 @@ def dictionary
 end
 
 def word_substituter(tweet_one)
-    dictionary.keys.collect do |d|
-      tweet_one.gsub! d, dictionary[d]
-  end 
-  tweet_one
+  tweet_one.split.collect do |tw1| 
+    if dictionary[tw1]
+      dictionary[tw1]
+    end 
+    tweet_one
 end
