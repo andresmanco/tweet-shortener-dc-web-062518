@@ -19,6 +19,9 @@ def word_substituter(tweet_one)
   tweet_one.split.collect do |tw1| 
     if dictionary[tw1]
       dictionary[tw1]
+    else
+      tw1
     end 
-    tweet_one
+  end
+  tweet_one.join(',')
 end
